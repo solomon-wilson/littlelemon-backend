@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 20, 2023 at 03:31 PM
+-- Generation Time: Sept 15, 2024 at 01:39 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -38,8 +38,8 @@ CREATE TABLE `authtoken_token` (
 --
 
 INSERT INTO `authtoken_token` (`key`, `created`, `user_id`) VALUES
-('02ec636a0f376ad295b2ae3812a1d12d159bc95f', '2023-07-20 11:52:41.554166', 1),
-('8e19c60cae33489ec3c2d602e7579ef4c9bc537e', '2023-07-20 12:05:36.300294', 2);
+('02ec636a0f376ad295b2ae3812a1d12d159bc95f', '2024-09-15 11:52:41.554166', 1),
+('8e19c60cae33489ec3c2d602e7579ef4c9bc537e', '2024-09-15 12:05:36.300294', 2);
 
 -- --------------------------------------------------------
 
@@ -148,8 +148,8 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$600000$oHIL01u5s3Rfxc8tbKxMGE$CtJgiUCrtsSFunrUY1vcanoA9mkT0PKC8Ni/Bi1un7o=', '2023-07-20 12:09:59.833421', 1, 'fahad', '', '', 'dev.shahfahad@gmail.com', 1, 1, '2023-07-20 07:17:24.779729'),
-(2, 'pbkdf2_sha256$600000$ILiZs8hjikUpfmfLrKjXNj$G8WJzZB74/ke1MTFZgucDrYvDBkCpWbbFPBoMWixd4M=', NULL, 0, 'jane', '', '', 'shahandfahadmad@gmail.com', 0, 1, '2023-07-20 11:54:13.291385');
+(1, 'pbkdf2_sha256$600000$oHIL01u5s3Rfxc8tbKxMGE$CtJgiUCrtsSFunrUY1vcanoA9mkT0PKC8Ni/Bi1un7o=', '2024-09-15 12:09:59.833421', 1, 'fahad', '', '', 'dev.shahfahad@gmail.com', 1, 1, '2024-09-15 07:17:24.779729'),
+(2, 'pbkdf2_sha256$600000$ILiZs8hjikUpfmfLrKjXNj$G8WJzZB74/ke1MTFZgucDrYvDBkCpWbbFPBoMWixd4M=', NULL, 0, 'jane', '', '', 'shahandfahadmad@gmail.com', 0, 1, '2024-09-15 11:54:13.291385');
 
 -- --------------------------------------------------------
 
@@ -197,12 +197,12 @@ CREATE TABLE `django_admin_log` (
 --
 
 INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`, `action_flag`, `change_message`, `content_type_id`, `user_id`) VALUES
-(1, '2023-07-20 07:23:50.924861', '1', 'Menu object (1)', 1, '[{\"added\": {}}]', 8, 1),
-(2, '2023-07-20 07:24:11.698955', '2', 'Menu object (2)', 1, '[{\"added\": {}}]', 8, 1),
-(3, '2023-07-20 07:24:25.738837', '3', 'Menu object (3)', 1, '[{\"added\": {}}]', 8, 1),
-(4, '2023-07-20 07:25:00.167403', '4', 'Menu object (4)', 1, '[{\"added\": {}}]', 8, 1),
-(5, '2023-07-20 07:25:23.481415', '1', 'Booking object (1)', 1, '[{\"added\": {}}]', 7, 1),
-(6, '2023-07-20 07:25:31.912943', '2', 'Booking object (2)', 1, '[{\"added\": {}}]', 7, 1);
+(1, '2024-09-15 07:23:50.924861', '1', 'Menu object (1)', 1, '[{\"added\": {}}]', 8, 1),
+(2, '2024-09-15 07:24:11.698955', '2', 'Menu object (2)', 1, '[{\"added\": {}}]', 8, 1),
+(3, '2024-09-15 07:24:25.738837', '3', 'Menu object (3)', 1, '[{\"added\": {}}]', 8, 1),
+(4, '2024-09-15 07:25:00.167403', '4', 'Menu object (4)', 1, '[{\"added\": {}}]', 8, 1),
+(5, '2024-09-15 07:25:23.481415', '1', 'Booking object (1)', 1, '[{\"added\": {}}]', 7, 1),
+(6, '2024-09-15 07:25:31.912943', '2', 'Booking object (2)', 1, '[{\"added\": {}}]', 7, 1);
 
 -- --------------------------------------------------------
 
@@ -250,29 +250,29 @@ CREATE TABLE `django_migrations` (
 --
 
 INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
-(1, 'contenttypes', '0001_initial', '2023-07-20 06:54:23.246353'),
-(2, 'auth', '0001_initial', '2023-07-20 06:54:24.334498'),
-(3, 'admin', '0001_initial', '2023-07-20 06:54:24.666243'),
-(4, 'admin', '0002_logentry_remove_auto_add', '2023-07-20 06:54:24.702185'),
-(5, 'admin', '0003_logentry_add_action_flag_choices', '2023-07-20 06:54:24.739772'),
-(6, 'contenttypes', '0002_remove_content_type_name', '2023-07-20 06:54:24.868419'),
-(7, 'auth', '0002_alter_permission_name_max_length', '2023-07-20 06:54:24.978150'),
-(8, 'auth', '0003_alter_user_email_max_length', '2023-07-20 06:54:25.043185'),
-(9, 'auth', '0004_alter_user_username_opts', '2023-07-20 06:54:25.065594'),
-(10, 'auth', '0005_alter_user_last_login_null', '2023-07-20 06:54:25.203759'),
-(11, 'auth', '0006_require_contenttypes_0002', '2023-07-20 06:54:25.212545'),
-(12, 'auth', '0007_alter_validators_add_error_messages', '2023-07-20 06:54:25.236623'),
-(13, 'auth', '0008_alter_user_username_max_length', '2023-07-20 06:54:25.305839'),
-(14, 'auth', '0009_alter_user_last_name_max_length', '2023-07-20 06:54:25.352792'),
-(15, 'auth', '0010_alter_group_name_max_length', '2023-07-20 06:54:25.396391'),
-(16, 'auth', '0011_update_proxy_permissions', '2023-07-20 06:54:25.417736'),
-(17, 'auth', '0012_alter_user_first_name_max_length', '2023-07-20 06:54:25.476161'),
-(18, 'sessions', '0001_initial', '2023-07-20 06:54:25.566917'),
-(19, 'restaurant', '0001_initial', '2023-07-20 07:16:06.864064'),
-(20, 'restaurant', '0002_alter_booking_name_alter_menu_price_alter_menu_title', '2023-07-20 07:23:20.751748'),
-(21, 'authtoken', '0001_initial', '2023-07-20 11:49:50.910612'),
-(22, 'authtoken', '0002_auto_20160226_1747', '2023-07-20 11:49:50.947554'),
-(23, 'authtoken', '0003_tokenproxy', '2023-07-20 11:49:50.954533');
+(1, 'contenttypes', '0001_initial', '2024-09-15 06:54:23.246353'),
+(2, 'auth', '0001_initial', '2024-09-15 06:54:24.334498'),
+(3, 'admin', '0001_initial', '2024-09-15 06:54:24.666243'),
+(4, 'admin', '0002_logentry_remove_auto_add', '2024-09-15 06:54:24.702185'),
+(5, 'admin', '0003_logentry_add_action_flag_choices', '2024-09-15 06:54:24.739772'),
+(6, 'contenttypes', '0002_remove_content_type_name', '2024-09-15 06:54:24.868419'),
+(7, 'auth', '0002_alter_permission_name_max_length', '2024-09-15 06:54:24.978150'),
+(8, 'auth', '0003_alter_user_email_max_length', '2024-09-15 06:54:25.043185'),
+(9, 'auth', '0004_alter_user_username_opts', '2024-09-15 06:54:25.065594'),
+(10, 'auth', '0005_alter_user_last_login_null', '2024-09-15 06:54:25.203759'),
+(11, 'auth', '0006_require_contenttypes_0002', '2024-09-15 06:54:25.212545'),
+(12, 'auth', '0007_alter_validators_add_error_messages', '2024-09-15 06:54:25.236623'),
+(13, 'auth', '0008_alter_user_username_max_length', '2024-09-15 06:54:25.305839'),
+(14, 'auth', '0009_alter_user_last_name_max_length', '2024-09-15 06:54:25.352792'),
+(15, 'auth', '0010_alter_group_name_max_length', '2024-09-15 06:54:25.396391'),
+(16, 'auth', '0011_update_proxy_permissions', '2024-09-15 06:54:25.417736'),
+(17, 'auth', '0012_alter_user_first_name_max_length', '2024-09-15 06:54:25.476161'),
+(18, 'sessions', '0001_initial', '2024-09-15 06:54:25.566917'),
+(19, 'restaurant', '0001_initial', '2024-09-15 07:16:06.864064'),
+(20, 'restaurant', '0002_alter_booking_name_alter_menu_price_alter_menu_title', '2024-09-15 07:23:20.751748'),
+(21, 'authtoken', '0001_initial', '2024-09-15 11:49:50.910612'),
+(22, 'authtoken', '0002_auto_20160226_1747', '2024-09-15 11:49:50.947554'),
+(23, 'authtoken', '0003_tokenproxy', '2024-09-15 11:49:50.954533');
 
 -- --------------------------------------------------------
 
@@ -291,7 +291,7 @@ CREATE TABLE `django_session` (
 --
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
-('86m01aa8o3rhsq12vndc1klindbxxdfe', '.eJxVjDsOwjAQBe_iGln-EpuSPmewdr0bHEC2FCcV4u4QKQW0b2beSyTY1pK2zkuaSVyEFqffDSE_uO6A7lBvTeZW12VGuSvyoF2Ojfh5Pdy_gwK9fGvW7KYBTSBSDBqUi1F7nHwGZQxhZm-9saCCD8FY50MMGLVTA_EZLIj3B-rrN5Y:1qMSTn:kJUuAFHMgfnHTRdaSjqeHrIrlgc7PeGe00DZvktG54c', '2023-08-03 12:09:59.836145');
+('86m01aa8o3rhsq12vndc1klindbxxdfe', '.eJxVjDsOwjAQBe_iGln-EpuSPmewdr0bHEC2FCcV4u4QKQW0b2beSyTY1pK2zkuaSVyEFqffDSE_uO6A7lBvTeZW12VGuSvyoF2Ojfh5Pdy_gwK9fGvW7KYBTSBSDBqUi1F7nHwGZQxhZm-9saCCD8FY50MMGLVTA_EZLIj3B-rrN5Y:1qMSTn:kJUuAFHMgfnHTRdaSjqeHrIrlgc7PeGe00DZvktG54c', '2024-10-20 12:09:59.836145');
 
 -- --------------------------------------------------------
 
@@ -311,10 +311,10 @@ CREATE TABLE `restaurant_booking` (
 --
 
 INSERT INTO `restaurant_booking` (`id`, `name`, `no_of_guests`, `booking_date`) VALUES
-(1, 'Fahad', 1, '2023-07-20'),
-(2, 'IQSF', 2, '2023-07-20'),
-(3, 'IQSF-2', 2, '2023-07-20'),
-(4, 'IQSF-3', 2, '2023-07-20');
+(1, 'Fahad', 1, '2024-09-15'),
+(2, 'IQSF', 2, '2024-09-15'),
+(3, 'IQSF-2', 2, '2024-09-15'),
+(4, 'IQSF-3', 2, '2024-09-15');
 
 -- --------------------------------------------------------
 
